@@ -1,0 +1,15 @@
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\bin\Debug\net6.0\Contracts.deps.json
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\bin\Debug\net6.0\Contracts.dll
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\bin\Debug\net6.0\Contracts.pdb
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfo.cs
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\Contracts.dll
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\refint\Contracts.dll
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\Contracts.pdb
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\ref\Contracts.dll
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\bin\Debug\net6.0\Entities.dll
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\bin\Debug\net6.0\Entities.pdb
+C:\Users\Antonio\Desktop\Programas mios\C#\AccountOwnerServer\Contracts\obj\Debug\net6.0\Contracts.csproj.CopyComplete
