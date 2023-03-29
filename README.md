@@ -132,3 +132,26 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 > En una arquitectura de microservicios, cada servicio se ejecuta en su propio proceso y puede ser desarrollado con diferentes lenguajes de programación, bases de datos y tecnologías. Cada servicio se expone a través de una interfaz bien definida, lo que permite que los servicios se comuniquen entre sí a través de la red.
 > 
 > Los microservicios permiten una mayor agilidad y escalabilidad en el desarrollo de software, ya que los servicios pueden ser desarrollados y desplegados de forma independiente. Además, los microservicios pueden ser escalados verticalmente o horizontalmente según la demanda, lo que permite un uso más eficiente de los recursos del servidor.
+
+### concurrencia de bases de datos
+> La concurrencia de bases de datos se refiere a la capacidad de una base de datos para manejar múltiples solicitudes de acceso a los datos al mismo tiempo, de manera eficiente y sin interferencias entre ellas. Esto permite que varios usuarios puedan acceder y modificar la información almacenada en la base de datos simultáneamente, sin afectar la integridad de los datos o la velocidad del sistema.
+
+### Inyector de dependencias
+> En el contexto de un proyecto ASP.NET Core Web API, la inyección de dependencias (DI) se refiere a una técnica de programación en la que los objetos se crean fuera de la clase que los usa y se pasan como parámetros a través del constructor o de propiedades públicas.
+
+> La DI se utiliza para resolver las dependencias entre los diferentes componentes de una aplicación y para reducir el acoplamiento entre ellos. En lugar de crear los objetos directamente dentro de una clase, la DI permite que una clase reciba un objeto ya creado desde el exterior, lo que permite que se reutilice en múltiples lugares de la aplicación.
+
+> ASP.NET Core proporciona una implementación integrada de DI, que se puede usar para registrar servicios y componentes en una colección de servicios. Luego, estos servicios se pueden inyectar en cualquier lugar de la aplicación que los necesite, ya sea a través del constructor o de las propiedades públicas.
+
+> Por ejemplo, si una clase de controlador de una API necesita acceder a una base de datos, se puede utilizar la DI para inyectar una instancia de la clase de contexto de base de datos en el controlador. De esta manera, el controlador puede interactuar con la base de datos sin tener que preocuparse por cómo se crea y se gestiona la conexión con la base de datos.
+
+> En resumen, la inyección de dependencias es una técnica útil para reducir el acoplamiento entre los componentes de una aplicación y mejorar la modularidad y la escalabilidad del código.
+
+###Ciclos de vida de servicios
+> En .NET Core, existen tres tipos de ciclos de vida para los servicios registrados en la colección de servicios:
+
+> 1. Transient: Los servicios transient se crean cada vez que se solicitan. Cada solicitud recibe una nueva instancia del servicio. Este ciclo de vida es útil para servicios ligeros y sin estado, que no requieren una instancia duradera.
+
+> 1. Scoped: Los servicios scoped se crean una vez por cada scope (ámbito) de solicitud. Los servicios scoped se mantienen durante toda la duración de una solicitud, por lo que son útiles para componentes que necesitan ser compartidos por varias instancias de un mismo objeto durante el procesamiento de una solicitud. Por ejemplo, un servicio que realiza la validación de un formulario podría ser registrado como un servicio scoped, de manera que pueda ser compartido por varios controladores que procesan el formulario.
+
+> 1. Singleton: Los servicios singleton se crean la primera vez que se solicitan y se mantienen en memoria durante toda la vida útil de la aplicación. Este ciclo de vida es útil para servicios que deben ser compartidos por toda la aplicación y que no cambian con frecuencia.
