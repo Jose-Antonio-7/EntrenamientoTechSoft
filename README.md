@@ -138,20 +138,20 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 
 ### Inyector de dependencias
 > En el contexto de un proyecto ASP.NET Core Web API, la inyección de dependencias (DI) se refiere a una técnica de programación en la que los objetos se crean fuera de la clase que los usa y se pasan como parámetros a través del constructor o de propiedades públicas.
-
+>
 > La DI se utiliza para resolver las dependencias entre los diferentes componentes de una aplicación y para reducir el acoplamiento entre ellos. En lugar de crear los objetos directamente dentro de una clase, la DI permite que una clase reciba un objeto ya creado desde el exterior, lo que permite que se reutilice en múltiples lugares de la aplicación.
-
+>
 > ASP.NET Core proporciona una implementación integrada de DI, que se puede usar para registrar servicios y componentes en una colección de servicios. Luego, estos servicios se pueden inyectar en cualquier lugar de la aplicación que los necesite, ya sea a través del constructor o de las propiedades públicas.
-
+>
 > Por ejemplo, si una clase de controlador de una API necesita acceder a una base de datos, se puede utilizar la DI para inyectar una instancia de la clase de contexto de base de datos en el controlador. De esta manera, el controlador puede interactuar con la base de datos sin tener que preocuparse por cómo se crea y se gestiona la conexión con la base de datos.
-
+>
 > En resumen, la inyección de dependencias es una técnica útil para reducir el acoplamiento entre los componentes de una aplicación y mejorar la modularidad y la escalabilidad del código.
 
-###Ciclos de vida de servicios
+### Ciclos de vida de servicios
 > En .NET Core, existen tres tipos de ciclos de vida para los servicios registrados en la colección de servicios:
-
+>
 > 1. Transient: Los servicios transient se crean cada vez que se solicitan. Cada solicitud recibe una nueva instancia del servicio. Este ciclo de vida es útil para servicios ligeros y sin estado, que no requieren una instancia duradera.
-
+>
 > 1. Scoped: Los servicios scoped se crean una vez por cada scope (ámbito) de solicitud. Los servicios scoped se mantienen durante toda la duración de una solicitud, por lo que son útiles para componentes que necesitan ser compartidos por varias instancias de un mismo objeto durante el procesamiento de una solicitud. Por ejemplo, un servicio que realiza la validación de un formulario podría ser registrado como un servicio scoped, de manera que pueda ser compartido por varios controladores que procesan el formulario.
-
+>
 > 1. Singleton: Los servicios singleton se crean la primera vez que se solicitan y se mantienen en memoria durante toda la vida útil de la aplicación. Este ciclo de vida es útil para servicios que deben ser compartidos por toda la aplicación y que no cambian con frecuencia.
