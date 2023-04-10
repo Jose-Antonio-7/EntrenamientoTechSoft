@@ -155,3 +155,30 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 > 1. Scoped: Los servicios scoped se crean una vez por cada scope (ámbito) de solicitud. Los servicios scoped se mantienen durante toda la duración de una solicitud, por lo que son útiles para componentes que necesitan ser compartidos por varias instancias de un mismo objeto durante el procesamiento de una solicitud. Por ejemplo, un servicio que realiza la validación de un formulario podría ser registrado como un servicio scoped, de manera que pueda ser compartido por varios controladores que procesan el formulario.
 >
 > 1. Singleton: Los servicios singleton se crean la primera vez que se solicitan y se mantienen en memoria durante toda la vida útil de la aplicación. Este ciclo de vida es útil para servicios que deben ser compartidos por toda la aplicación y que no cambian con frecuencia.
+
+### Java Web Token
+> Un Java Web Token (JWT) es un estándar abierto (RFC 7519) que define un formato compacto y autónomo para transmitir información de forma segura entre partes como un objeto JSON firmado digitalmente. El JWT se compone de tres partes: el encabezado (header), el cuerpo (payload) y la firma (signature).
+> 
+> El encabezado contiene información sobre el tipo de token y el algoritmo utilizado para firmar la información. El cuerpo contiene información adicional que se quiere transmitir, como el nombre de usuario o su rol en una aplicación, por ejemplo. Y la firma se usa para garantizar que el token no ha sido manipulado durante su transmisión y que solo la parte que tiene acceso a la clave secreta puede generar o validar el token.
+> 
+> En cuanto a su aplicación en APIs, los JWT se usan comúnmente como mecanismo de autenticación y autorización para servicios web RESTful. El proceso de autenticación y autorización se basa en enviar un JWT en la cabecera de una solicitud HTTP (por lo general en el campo "Authorization") en lugar de enviar las credenciales en cada petición. El servidor puede verificar la validez del token y conceder acceso a los recursos protegidos si se cumplen las condiciones especificadas en el token.
+
+> En resumen, el uso de JWTs en APIs proporciona una forma segura y escalable de manejar la autenticación y autorización de usuarios sin la necesidad de almacenar información en el servidor.
+
+### Funcion asincrona
+> Una función asíncrona es una función que devuelve una Promesa y que puede contener una o más operaciones asíncronas, como por ejemplo, la obtención de datos de un servidor o una base de datos.
+> 
+> El método async/await se compone de dos palabras clave: async y await. La palabra clave async se utiliza para declarar una función asíncrona. Dentro de una función asíncrona, se puede usar la palabra clave await para esperar a que una Promesa se resuelva antes de continuar la ejecución del código.
+> 
+> Por ejemplo, supongamos que queremos obtener los datos de un servidor de forma asíncrona. Podríamos escribir una función asíncrona de la siguiente manera:
+
+> javascript
+> Copy code
+> async function obtenerDatos() {
+>   const respuesta = await fetch('https://api.example.com/datos');
+>   const datos = await respuesta.json();
+>   return datos;
+> }
+> En este ejemplo, la función obtenerDatos() utiliza la palabra clave async para declararse como una función asíncrona. Dentro de la función, se utiliza la palabra clave await para esperar a que la Promesa devuelta por la función fetch() se resuelva. Después, se utiliza await de nuevo para esperar a que se convierta la respuesta en formato JSON. Finalmente, la función devuelve los datos obtenidos.
+> 
+> En resumen, el método async/await es una forma conveniente y legible de trabajar con funciones asíncronas en JavaScript, permitiendo la ejecución asíncrona de código y la espera de resultados sin bloquear el hilo de ejecución principal del programa.
