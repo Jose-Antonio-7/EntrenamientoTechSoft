@@ -179,6 +179,7 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 >   const datos = await respuesta.json();
 >   return datos;
 > }
+
 > En este ejemplo, la función obtenerDatos() utiliza la palabra clave async para declararse como una función asíncrona. Dentro de la función, se utiliza la palabra clave await para esperar a que la Promesa devuelta por la función fetch() se resuelva. Después, se utiliza await de nuevo para esperar a que se convierta la respuesta en formato JSON. Finalmente, la función devuelve los datos obtenidos.
 > 
 > En resumen, el método async/await es una forma conveniente y legible de trabajar con funciones asíncronas en JavaScript, permitiendo la ejecución asíncrona de código y la espera de resultados sin bloquear el hilo de ejecución principal del programa.
