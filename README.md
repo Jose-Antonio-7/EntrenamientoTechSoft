@@ -183,3 +183,14 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 > - Authentication: Propiedad de solo lectura que devuelve un objeto AuthenticationManager que se puede utilizar para interactuar con el sistema de autenticación de ASP.NET Core.
 > - Authorization: Propiedad de solo lectura que devuelve un objeto AuthorizationManager que se puede utilizar para interactuar con el sistema de autorización de ASP.NET Core.
 > - HttpContext: Propiedad de solo lectura que devuelve un objeto HttpContext que representa la solicitud HTTP actual.
+
+### Http factory
+> HttpClientFactory es una clase en .NET que proporciona un enfoque optimizado y fácil de usar para crear instancias de la clase HttpClient, que es una clase que permite a los desarrolladores realizar solicitudes HTTP a un servidor. La clase HttpClientFactory se encuentra en el paquete NuGet Microsoft.Extensions.Http.
+> 
+> La clase HttpClientFactory ofrece las siguientes ventajas:
+> 
+> - Control del ciclo de vida de HttpClient: En lugar de crear instancias de HttpClient directamente en el código, se puede configurar HttpClientFactory para administrar las instancias de HttpClient en nombre de una aplicación. Esto garantiza que se utilicen instancias de HttpClient de forma eficiente y que se eviten posibles fugas de memoria.
+> 
+> - Configuración centralizada: HttpClientFactory permite definir la configuración para todas las instancias de HttpClient en un solo lugar. Esto simplifica la configuración de la autenticación, las políticas de reintento y otros aspectos de la comunicación HTTP.
+> 
+> - Integración con la inyección de dependencias: HttpClientFactory se integra con la inyección de dependencias de .NET Core. Esto permite que las instancias de HttpClient se resuelvan y se utilicen en los controladores de API, los servicios y otros componentes de la aplicación.
