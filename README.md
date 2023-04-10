@@ -194,3 +194,10 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 > - Configuración centralizada: HttpClientFactory permite definir la configuración para todas las instancias de HttpClient en un solo lugar. Esto simplifica la configuración de la autenticación, las políticas de reintento y otros aspectos de la comunicación HTTP.
 > 
 > - Integración con la inyección de dependencias: HttpClientFactory se integra con la inyección de dependencias de .NET Core. Esto permite que las instancias de HttpClient se resuelvan y se utilicen en los controladores de API, los servicios y otros componentes de la aplicación.
+
+###Serilog
+> Serilog es un framework de registro de eventos para .NET, que se puede utilizar en aplicaciones ASP.NET Core. Proporciona una forma flexible y fácil de usar para escribir mensajes de registro de una aplicación, lo que permite a los desarrolladores realizar un seguimiento de lo que está sucediendo dentro de su aplicación en tiempo real.
+> 
+> En ASP.NET Core, Serilog se integra con el sistema de registro de la plataforma, lo que significa que los mensajes de registro que se escriben en Serilog se pueden almacenar en una variedad de destinos de registro, como archivos, bases de datos, servicios de terceros, etc.
+> 
+> Una de las características clave de Serilog es su capacidad para estructurar los mensajes de registro en objetos, lo que facilita su búsqueda y análisis. Por ejemplo, se puede agregar información adicional, como el usuario que realizó una acción en particular o el número de serie del dispositivo que registró una falla.
