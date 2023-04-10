@@ -170,16 +170,16 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 > 
 > El método async/await se compone de dos palabras clave: async y await. La palabra clave async se utiliza para declarar una función asíncrona. Dentro de una función asíncrona, se puede usar la palabra clave await para esperar a que una Promesa se resuelva antes de continuar la ejecución del código.
 > 
-> Por ejemplo, supongamos que queremos obtener los datos de un servidor de forma asíncrona. Podríamos escribir una función asíncrona de la siguiente manera:
-
-> javascript
-> Copy code
-> async function obtenerDatos() {
->   const respuesta = await fetch('https://api.example.com/datos');
->   const datos = await respuesta.json();
->   return datos;
-> }
-
-> En este ejemplo, la función obtenerDatos() utiliza la palabra clave async para declararse como una función asíncrona. Dentro de la función, se utiliza la palabra clave await para esperar a que la Promesa devuelta por la función fetch() se resuelva. Después, se utiliza await de nuevo para esperar a que se convierta la respuesta en formato JSON. Finalmente, la función devuelve los datos obtenidos.
-> 
 > En resumen, el método async/await es una forma conveniente y legible de trabajar con funciones asíncronas en JavaScript, permitiendo la ejecución asíncrona de código y la espera de resultados sin bloquear el hilo de ejecución principal del programa.
+
+### Security context
+> En ASP.NET Core, la clase SecurityContext es una clase abstracta que proporciona una API para acceder a la información de seguridad para la solicitud actual. Esta clase se encuentra en el espacio de nombres Microsoft.AspNetCore.Http.
+> 
+> La clase SecurityContext encapsula la información de seguridad asociada con una solicitud HTTP en ASP.NET Core. Esta información incluye los detalles de autenticación y autorización de la solicitud actual, como la identidad del usuario autenticado, los roles a los que pertenece y las políticas de autorización aplicables.
+> 
+> La clase SecurityContext proporciona una serie de propiedades y métodos que permiten a los desarrolladores trabajar con la información de seguridad de una solicitud. Algunos de los miembros más importantes de esta clase son:
+> 
+> - User: Propiedad de solo lectura que devuelve un objeto ClaimsPrincipal que representa la identidad del usuario actualmente autenticado.
+> - Authentication: Propiedad de solo lectura que devuelve un objeto AuthenticationManager que se puede utilizar para interactuar con el sistema de autenticación de ASP.NET Core.
+> - Authorization: Propiedad de solo lectura que devuelve un objeto AuthorizationManager que se puede utilizar para interactuar con el sistema de autorización de ASP.NET Core.
+> - HttpContext: Propiedad de solo lectura que devuelve un objeto HttpContext que representa la solicitud HTTP actual.
