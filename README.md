@@ -201,3 +201,12 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 > En ASP.NET Core, Serilog se integra con el sistema de registro de la plataforma, lo que significa que los mensajes de registro que se escriben en Serilog se pueden almacenar en una variedad de destinos de registro, como archivos, bases de datos, servicios de terceros, etc.
 > 
 > Una de las características clave de Serilog es su capacidad para estructurar los mensajes de registro en objetos, lo que facilita su búsqueda y análisis. Por ejemplo, se puede agregar información adicional, como el usuario que realizó una acción en particular o el número de serie del dispositivo que registró una falla.
+
+### Health checks 
+> Los health checks (o comprobaciones de salud en español) son una característica de ASP.NET que te permiten comprobar el estado de tu aplicación web. En otras palabras, son una forma de monitorear la salud de tu aplicación y asegurarte de que esté funcionando correctamente.
+> 
+> Cuando configuras health checks en ASP.NET, puedes especificar ciertos puntos de verificación que deben ser evaluados para determinar si tu aplicación está en buen estado. Estos puntos de verificación pueden incluir cosas como la disponibilidad de una base de datos, la conectividad a un servicio web externo, o el estado de algún proceso en segundo plano.
+> 
+> Si alguno de estos puntos de verificación falla, se considera que la aplicación está en un estado no saludable y se puede tomar alguna acción al respecto, como enviar una alerta al equipo de operaciones o intentar reiniciar algún componente.
+> 
+> ASP.NET proporciona varias formas de implementar health checks, incluyendo endpoints personalizados, verificaciones de base de datos y verificaciones de integridad de archivos. También puedes agregar tus propias comprobaciones personalizadas si necesitas evaluar algo específico en tu aplicación.
