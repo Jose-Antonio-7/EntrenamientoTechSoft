@@ -210,3 +210,14 @@ UI Layer: This layer contains the user interface, such as a web page or a deskto
 > Si alguno de estos puntos de verificación falla, se considera que la aplicación está en un estado no saludable y se puede tomar alguna acción al respecto, como enviar una alerta al equipo de operaciones o intentar reiniciar algún componente.
 > 
 > ASP.NET proporciona varias formas de implementar health checks, incluyendo endpoints personalizados, verificaciones de base de datos y verificaciones de integridad de archivos. También puedes agregar tus propias comprobaciones personalizadas si necesitas evaluar algo específico en tu aplicación.
+Verificación de estado de conexión de base de datos: Esta comprobación verifica si la aplicación puede conectarse a la base de datos. Si la conexión no se puede establecer, se considera que la aplicación está en un estado no saludable.
+> 
+> Algunos tipos de health checks son: 
+> 
+> 1. Verificación de integridad de la base de datos: Esta comprobación verifica si la base de datos está en buen estado. Por ejemplo, se puede verificar si todas las tablas y columnas requeridas están presentes y si no hay ningún registro duplicado.
+> 
+> 1. Verificación de disponibilidad de servicio externo: Esta comprobación verifica si la aplicación puede conectarse a un servicio externo que utiliza. Si el servicio está caído o inaccesible, se considera que la aplicación está en un estado no saludable.
+> 
+> 1. Verificación de integridad de archivos: Esta comprobación verifica si los archivos requeridos por la aplicación están presentes y son accesibles. Por ejemplo, se puede verificar si los archivos de configuración y los archivos de recursos están en su lugar.
+> 
+> 1. Verificación personalizada: Esta comprobación permite que implementes tu propia lógica personalizada para verificar el estado de la aplicación. Por ejemplo, se puede verificar si un proceso en segundo plano se está ejecutando correctamente.
